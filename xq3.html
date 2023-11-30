@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Project Demostration</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <div id="top">
+    <div class="logo">
+      Wenxing's_Profolis
+    </div>
+
+    <div style="clear:both"></div>
+  </div>
+
+  <div id="navBar">
+    <ul id="nav_ul">
+      <li><a href="index.html">Home Page</a></li>
+
+      <div style="clear:both"></div>
+    </ul>
+  </div>
+  <div id="wrapper">
+
+    <div class="art_content">
+
+
+      <h1 class="art_title">Work Details</h1>
+
+      <div class="art_entry">
+        <video controls width="100%" height="100%">
+          <source src="images/Unreal AI Example_2.mp4" type="video/mp4">
+
+        </video>
+        <h3>Description:</h3>
+        <p>
+          Here is a basic introduction of this project, the green ships are called Harvester ship, and this ship have
+          its own observe hemisphere and collision hemisphere, the observe hemisphere is 2 times bigger than the
+          collision hemisphere. And each Harvester ship are affected by the following forces: Boid avoidance, velocity
+          matching, flock centering, static obstacle avoidance, migration, and pirate avoidance. As every frame of the
+          gameplay, each of these vectors will be calculated by the device and make the harvester ship move within the
+          space provided.
+          The space and the base code are provided by the Monash FIT team, as a student, my work related to this project
+          is to create an evolutionary algorithm that make each harvester and pirate ship get high point and make each
+          “generation” of the boids live longer. The pirate ship has similar functions and forces as the Harvester does,
+          the only difference is that the pirate ship will chase the Harvester ships, while its collision hemisphere
+          touches the Harvester’s collision hemisphere, it will “eat” the harvester’s point (fitness which will be
+          discussed later.)
+          After the playground and the boids are generated within the map, the genotype which contains the ratio of each
+          force mentioned above will be generated, and then the function will select a few boids for Harvester and
+          pirate as the pirate of next generation. The parents are selected within the top 10 boids of each generation.
+          As the parents are selected, the next generation boid’s genotype is made by the attributes of the parents’
+          ship. With some random mutations. And the random mutations is quite complicated, because each force mentioned
+          earlier have different ratio range, so the random ration of each force are set within this range.
+          After a new set of genotypes of new generation of the boids are generated, all the exist boids on the
+          playground will be erased and generate new set of the boids with the new-generated genotype applied.
+
+        </p>
+        <!-- <h3>Screenshots:</h3> -->
+        <div class="jtimg">
+          <!-- <img src="images/Screenshots/R_SS.jpg">
+          <img src="images/Screenshots/R_SS1.jpg">
+          <img src="images/Screenshots/R_SS2.jpg">
+          <img src="images/Screenshots/R_SS4.jpg"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Copyright &#169; Wenxing Ding, All Rights Reserved</p>
+  </div>
+
+</body>
+
+</html>
