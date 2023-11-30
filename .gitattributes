@@ -1,3 +1,8 @@
 Unity filter=lfs diff=lfs merge=lfs -text
 Scene_1.mp4 filter=lfs diff=lfs merge=lfs -text
 Scene_2.mp4 filter=lfs diff=lfs merge=lfs -text
+Scene_3.mp4 filter=lfs diff=lfs merge=lfs -text
+VR_1.mp4 filter=lfs diff=lfs merge=lfs -text
+VR_2.mp4 filter=lfs diff=lfs merge=lfs -text
+VR_3.mp4 filter=lfs diff=lfs merge=lfs -text
+VR_4.mp4 filter=lfs diff=lfs merge=lfs -text
